@@ -1,0 +1,14 @@
+def freq_table(df_name, col_ind):
+    col_lst = []
+    for row in df_name:
+        col_val = row[col_ind]
+        col_lst.append(col_val)
+    frequency_table = {}
+    for item in col_lst:
+        if item in frequency_talbe:
+            frequency_table[item] += 1
+        else:
+            frequency_table[item] = 1
+    return frequency_table
+    
+    
