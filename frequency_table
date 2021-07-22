@@ -1,11 +1,11 @@
-def freq_table(df_name, col_ind):
+def freq_table(dataset, col_ind):
     col_lst = []
-    for row in df_name:
+    for row in dataset:
         col_val = row[col_ind]
         col_lst.append(col_val)
     frequency_table = {}
     for item in col_lst:
-        if item in frequency_talbe:
+        if item in frequency_table:
             frequency_table[item] += 1
         else:
             frequency_table[item] = 1
